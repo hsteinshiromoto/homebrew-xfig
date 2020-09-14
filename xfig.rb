@@ -14,6 +14,7 @@ class Xfig < Formula
                           "--disable-dependency-tracking",
                           "--disable-silent-rules"
     system "make", "install"
+    system "make", "install-strip"
   end
 
   test do
