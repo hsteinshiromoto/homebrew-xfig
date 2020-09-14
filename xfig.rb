@@ -10,10 +10,10 @@ class Xfig < Formula
   depends_on :x11
 
   def install
+    system "xmkmf"
     system "./configure", "--prefix=#{prefix}",
                           "--disable-dependency-tracking",
                           "--disable-silent-rules"
-    system "xmkmf"
     system "make", "install"
     system "make", "install-strip"
   end
