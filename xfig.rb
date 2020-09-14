@@ -11,8 +11,6 @@ class Xfig < Formula
 
   def install
     system "./configure", "--prefix=#{prefix}",
-                          "--disable-dependency-tracking",
-                          "--disable-silent-rules"
     system "make", "install"
   end
 
