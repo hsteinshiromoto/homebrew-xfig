@@ -13,6 +13,7 @@ class Xfig < Formula
     system "./configure", "--prefix=#{prefix}",
                           "--disable-dependency-tracking",
                           "--disable-silent-rules"
+    system "xmkmf"
     system "make", "install"
     system "make", "install-strip"
   end
