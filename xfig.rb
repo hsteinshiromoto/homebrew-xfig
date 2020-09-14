@@ -10,7 +10,7 @@ class Xfig < Formula
   depends_on :x11
 
   def install
-    system "./configure", "--prefix=#{prefix}",
+    system "./configure", "--prefix=#{prefix}"
     system "make", "install"
   end
 
